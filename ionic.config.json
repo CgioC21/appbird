@@ -1,0 +1,7 @@
+{
+  "name": "infobird",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
