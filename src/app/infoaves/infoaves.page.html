@@ -1,0 +1,29 @@
+<!-- infoaves.page.html -->
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Info Aves
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Info Aves</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list>
+    <ion-item *ngFor="let ave of aves">
+      <ion-label>
+        <h2>Familia: {{ ave.Familia }}</h2>
+        <p>Nombre: {{ ave.Nombre }}</p>
+        <p>Ubicación: {{ ave.Ubicacion }}</p>
+        <p>Descubridor: {{ ave.Descubridor }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

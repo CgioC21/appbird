@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'infoaves',
+    loadChildren: () => import('./infoaves/infoaves.module').then( m => m.InfoavesPageModule)
+  },
 ];
 
 @NgModule({
